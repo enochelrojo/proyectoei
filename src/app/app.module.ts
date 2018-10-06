@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { CoursesComponent } from './courses/courses.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TasksComponent } from './tasks/tasks.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    TasksComponent
+    TasksComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule, NgbModule, AppRoutingModule
