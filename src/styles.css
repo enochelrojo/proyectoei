@@ -1,2 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'bootstrap.min.css'
+@import 'bootstrap.min.css';
+
+body { padding: 5px; }
+.nav-link.active { font-weight: bold; }
