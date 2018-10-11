@@ -1,3 +1,17 @@
-<p>
-  tasks works!
-</p>
+<div class="container">
+	<h1>Formulario para la administración de tareas</h1>
+	<h4>Tareas cargadas: </h4>
+	
+	<h4>Cargar una nueva tarea: </h4>
+	<form>
+		<div class="form-group">
+			<label for="nombre">Nombre: </label>
+			<input placeholder="Ingrese aquí el nombre de la tarea..." type="text" id="nombre" name="nombre" value="" class="form-control" required="required">			
+		</div>
+		<div class="form-group">
+			<label for="curso">Curso: </label>
+		</div>
+
+		<button [disabled]="!courseForm.form.valid" type="submit" class="btn btn-success">Crear curso</button>
+	</form>
+</div>

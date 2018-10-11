@@ -1,3 +1,3 @@
 export class Course {
-    nombre: string;
+    constructor(public nombre: string) {}
 }

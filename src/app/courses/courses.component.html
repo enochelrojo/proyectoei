@@ -1,3 +1,19 @@
-<p>
-  courses works!
-</p>
+<div class="container">
+	<h1>Formulario para la administración de cursos</h1>
+	<h4>Cursos cargados: </h4>
+	
+	<ul>
+		<li *ngFor="let curso of cursos">
+		 {{ curso.nombre }}
+		</li>
+	</ul>
+	
+	<h4>Cargar un nuevo curso: </h4>
+	<form #courseForm="ngForm" (ngSubmit)="onSubmit()">
+		<div class="form-group">
+			<label for="nombre">Nombre: </label>
+			<input placeholder="Ingrese aquí el nombre del curso..." [(ngModel)]="course.nombre" type="text" id="nombre" name="nombre" value="" class="form-control" required="required">
+		</div>
+		<button [disabled]="!courseForm.form.valid" type="submit" class="btn btn-success">Crear curso</button>
+	</form>
+</div>
